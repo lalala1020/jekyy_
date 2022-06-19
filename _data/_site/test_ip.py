@@ -19,7 +19,7 @@ with open("./ip_list.yml") as rf:
     buffer = ""
     for ip in ip_list:
         result = ""
-        a = os.system(f"ping -c4 {ip} > /dev/null")
+        a = os.system(f"ping -c4 {ip} > /dev/null")    # 返回4个包结果
         if a == 0:
             result = "ok"
         elif a == 256:
