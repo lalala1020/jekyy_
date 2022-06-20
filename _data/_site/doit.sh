@@ -4,12 +4,5 @@ function ping_one(){
     cp out.txt ip_list.yml
 }
 
-# while [true]
-# do 
-#     ping_one
-#     echo "ping_one"
-#     sleep 3
-# done
-
 ping_one
 echo "ping_one"

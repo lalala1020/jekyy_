@@ -4,15 +4,14 @@ import re
 
 ip_list = []
 
-with open("./ip_list.yml") as rf:
-    lines = rf.readlines()
+with open("./ip_list.yml") as f:
+    lines = f.readlines()
 
     for line in lines:
         if len(line) == 0:
             continue
         if line.startswith("-"):
             line = line.split(":")
-            print("此时的line",line)
             ip = line[1].strip()     # 获取文件中的ip地址
             ip_list.append(ip)
 
